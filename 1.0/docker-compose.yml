@@ -1,11 +1,3 @@
-# Docker Capifony
-
-Docker image to run Capifony and deploy your applications
-
-## Compose
-
-```shell
-
 capifony:
   #build: .
   image: ypereirareis/capifony:1.0
@@ -16,5 +8,3 @@ capifony:
       - ${SSH_AUTH_SOCK}:${SSH_AUTH_SOCK}
       - ~/.ssh/id_rsa:/home/capifony/.ssh/id_rsa
       - ~/.ssh/known_hosts:/home/capifony/.ssh/known_hosts
-
-```
